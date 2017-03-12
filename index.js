@@ -6,11 +6,9 @@ var todoReader = require('./todo-reader');
 var todoStringBuilder = require('./todo-string-builder');
 
 todoReader().subscribe(todo => {
-    console.log("Datei: " + todo.path);
-    console.log("--------------------");
-    todo.todos.map(x => console.log("Zu tun ist: " + todoStringBuilder.extractTodo(x)));
     console.log("<==================>");
-    console.log("\n");
+    console.log("Datei: " + todo.path);
+    todo.todos.map(x => console.log("Zeile: " + todo.line + " Zu tun ist: " + todoStringBuilder.extractTodo(x)));
 });
 
 

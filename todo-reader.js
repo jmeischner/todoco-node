@@ -1,8 +1,10 @@
-var fs = require('fs');
-var Rx = require('rxjs/Rx');
-var glob = require('globby');
+const fs = require('fs');
+const Rx = require('rxjs/Rx');
+const glob = require('globby');
+const readline = require('readline');
 
-var todoRegex = require('./todo-regex')();
+// Todo: Regex bricht gerade bei Doppelpunkten ab
+const todoRegex = require('./todo-regex')();
 
 // Todo: added a config reader for paths and ignore paths
 module.exports = function(paths) {
@@ -10,12 +12,15 @@ module.exports = function(paths) {
     .flatMap(path => Rx.Observable.from(path))
     .map(extractTodo)
     .flatMap(file => {
-        return file.datastream.map(data => {
-            var match = data.match(todoRegex);
+        var linenumber = 0;
+        return Rx.Observable.fromEvent(file.datastream, 'line', line => {
+            linenumber++;
+            var match = line.match(todoRegex);
             if (match) {
                 return {
                     path: file.path,
-                    todos: match
+                    todos: match,
+                    line: linenumber
                 };
             }
         }, error => {
@@ -25,11 +30,23 @@ module.exports = function(paths) {
     .filter(todo => todo !== undefined);
 };
 
+// Todo: Whats faster readFile and only lines if there is a match or read all files, by line and found the matches?
+
+// function extractTodo(path) {
+//     var datastream = Rx.Observable.bindNodeCallback(fs.readFile);
+//     return {
+//         path: path,
+//         datastream: datastream(path, 'utf8')
+//     };
+// }
 
 function extractTodo(path) {
-    var datastream = Rx.Observable.bindNodeCallback(fs.readFile);
+    const rl = readline.createInterface({
+        input: fs.createReadStream(path)
+    });
+
     return {
         path: path,
-        datastream: datastream(path, 'utf8')
+        datastream: rl
     };
 }
