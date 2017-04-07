@@ -9,10 +9,12 @@
   "author": "Jan Meischner",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.1.2",
     "globby": "^6.1.0",
-    "lodash": "^4.17.4",
-    "rxjs": "^5.2.0",    
     "ignore": "^3.2.6",
-    "jsonfile": "^2.4.0"
+    "jsonfile": "^2.4.0",
+    "lodash": "^4.17.4",
+    "rxjs": "^5.2.0",
+    "toml": "^2.3.2"
   }
 }
