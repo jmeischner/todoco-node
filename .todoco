@@ -1,0 +1,15 @@
+useGitignore = false
+
+# Todo: add hinzufügen
+[files]
+ignore = [
+    'node_modules/**/*'
+]
+
+add = [
+    '.todoco'
+]
+
+[server]
+url = 'localhost:8787'
+user = 'jan'
