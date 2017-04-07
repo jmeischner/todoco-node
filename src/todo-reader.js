@@ -7,8 +7,8 @@ const readline = require('readline');
 const todoRegex = require('./todo-regex')();
 
 // Todo: added a config reader for paths and ignore paths
-module.exports = function(paths) {
-    return Rx.Observable.fromPromise(glob(['**/*.js', '!node_modules/**']))
+module.exports = function(rxPaths) {
+    return rxPaths
     .flatMap(path => Rx.Observable.from(path))
     .map(extractTodo)
     .flatMap(file => {
