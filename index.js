@@ -8,12 +8,7 @@ var configReader = require('./src/todo-config');
 
 
 let config = configReader.readConfig(__dirname);
-let files = [];
-if (config.useGitignore) {
-    files = configReader.files.fromGitignore(__dirname);
-} else {
-    files = configReader.files.fromConfig(config.files);
-}
+let files = configReader.getFiles(__dirname, config.files);
 
 todoReader(files).subscribe(todo => {
     console.log("<==================>");

@@ -1,4 +1,3 @@
-const jsonfile = require('jsonfile');
 const ignore = require('ignore');
 const fs = require('fs');
 const globby = require('globby');
@@ -8,7 +7,8 @@ const toml = require('toml');
 const log = require('./todo-log');
 const _ = require('lodash');
 
-var readConfig = function (directory) {
+// Todo: Refactor File
+const readConfig = function (directory) {
     let configPath = path.join(directory, '/.todoco');
     
     if (!fs.existsSync(configPath)) {
@@ -22,35 +22,58 @@ var readConfig = function (directory) {
     } catch (e) {
         return log.error("C002", 'Error during parsing ".todoco" file', "Parsing error on line " + e.line + ", column " + e.column + ": " + e.message);
     }
-
+    
+    config = fillConfigWithDefaults(config);
     return config;
 };
 
-var filesFromGitignore = function (directory) {
+const filesFromGitignore = function (directory, toAdd, toIgnore) {
     var gitignoreFile = path.join(directory, '/.gitignore');
     if (fs.existsSync(gitignoreFile)) {
         const ig = ignore().add(fs.readFileSync(gitignoreFile).toString());
-        return Rx.Observable.fromPromise(globby(['**'], {nodir: true}))
+        return Rx.Observable.fromPromise(globby(_.concat(['**'], toIgnore, toAdd), {nodir: true}))
         .map(paths => {
             return ig.filter(paths);
         });
     } else {
-        return null;
+        return Rx.Observable.from([]);
     }
 };
 
-// Todo: Prüfen ob der Punkt files in config überhaupt exisitert, wenn nicht alle nehmen
-var filesFromConfig = function(files) {
-    const ignoreEntries = _.map(files.ignore, file => {
-        return '!'+file;
-    });
-    return Rx.Observable.fromPromise(globby(_.concat(['**'], ignoreEntries, files.add), {nodir: true}));
+// Todo: Combine gitignore and normal files from config
+const filesFromConfig = function(directory, files) {
+    const addEntries = files.add;
+    const ignoreEntries = convertIgnoreFilesFromConfig(files.ignore);
+    if (files.useGitignore) {
+        return filesFromGitignore(directory, addEntries, ignoreEntries);
+    } else {
+        return Rx.Observable.fromPromise(globby(_.concat(['**'], ignoreEntries, addEntries), {nodir: true}));
+    }
 };
 
 module.exports = {
-    files: {
-        fromGitignore: filesFromGitignore,
-        fromConfig: filesFromConfig
-    },
+    getFiles: filesFromConfig,
     readConfig: readConfig
+};
+
+const convertIgnoreFilesFromConfig = function(toIgnore) { 
+
+    return  _.map(toIgnore, file => {
+        return file[0] === '!' ? file : '!' + file;
+    });
+    
+};
+
+const fillConfigWithDefaults = function(config) {
+
+    config.files = config.files ? config.files : {
+        useGitignore: false,
+        ignore: [],
+        add: []
+    };
+    config.files.useGitignore = config.files.useGitignore ? config.files.useGitignore : false;
+    config.files.add = config.files.add ? config.files.add : [];
+    config.files.ignore = config.files.ignore ? config.files.ignore : [];
+
+    return config;
 };
