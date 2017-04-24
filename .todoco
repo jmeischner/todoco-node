@@ -6,7 +6,8 @@ author = 'Jan Meischner'
 [files]
 useGitignore = true
 ignore = [
-    'node_modules/**/*'
+    'node_modules/**/*',
+    'src/extracting/regex.js'
 ]
 
 add = [

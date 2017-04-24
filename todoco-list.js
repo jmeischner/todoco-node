@@ -1,15 +1,13 @@
-let todoReader = require('./src/extracting/reader');
-let todoStringBuilder = require('./src/extracting/string-builder');
-let configReader = require('./src/config/config');
-let list = require('./src/logging/list-todo');
+const todoReader = require('./src/extracting/reader');
+const configReader = require('./src/config/config');
+const list = require('./src/logging/list-todos');
 
-let config = configReader.readConfig(__dirname);
-let files = configReader.getFiles(__dirname, config.files);
+const config = configReader.readConfig(__dirname);
+const files = configReader.getFiles(__dirname, config.files);
 
+const clear = require('clear');
+clear();
 
-todoReader(files).subscribe(todo => {
-    // console.log("<==================>");
-    // console.log("Datei: " + todo.path);
-    // todo.todos.map(x => console.log("Zeile: " + todo.line + " Zu tun ist: " + todoStringBuilder.extractTodo(x)));
-    console.log(todo);
+todoReader(files).subscribe(file => {
+    list(file);
 });

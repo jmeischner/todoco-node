@@ -5,11 +5,9 @@ const readline = require('readline');
 
 const log = require('../logging/log');
 
-// Todo: Regex bricht gerade bei Doppelpunkten ab
 const todoRegex = require('./regex')();
 const stringBuilder = require('./string-builder');
 
-// Todo: added a config reader for paths and ignore paths
 module.exports = function(rxPaths) {
     return rxPaths
     .flatMap(path => Rx.Observable.from(path))

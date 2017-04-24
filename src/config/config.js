@@ -40,7 +40,6 @@ const filesFromGitignore = function (directory, toAdd, toIgnore) {
     }
 };
 
-// Todo: Combine gitignore and normal files from config
 const filesFromConfig = function(directory, files) {
     const addEntries = files.add;
     const ignoreEntries = convertIgnoreFilesFromConfig(files.ignore);
