@@ -3,8 +3,11 @@ const Rx = require('rxjs/Rx');
 const glob = require('globby');
 const readline = require('readline');
 
+const log = require('../logging/log');
+
 // Todo: Regex bricht gerade bei Doppelpunkten ab
-const todoRegex = require('./todo-regex')();
+const todoRegex = require('./regex')();
+const stringBuilder = require('./string-builder');
 
 // Todo: added a config reader for paths and ignore paths
 module.exports = function(rxPaths) {
@@ -13,21 +16,27 @@ module.exports = function(rxPaths) {
     .map(extractTodo)
     .flatMap(file => {
         var linenumber = 0;
-        return Rx.Observable.fromEvent(file.datastream, 'line', line => {
+        
+        return Rx.Observable.fromEvent(file.datastream, 'line')
+        .map(line => {
+            
             linenumber++;
             var match = line.match(todoRegex);
             if (match) {
                 return {
-                    path: file.path,
-                    todos: match,
+                    text: stringBuilder.extractTodo(match[0]),
                     line: linenumber
                 };
             }
         }, error => {
-            console.error(error);
-        });
-    })
-    .filter(todo => todo !== undefined);
+            log.error(error);
+        })
+        .filter(todo => todo !== undefined)
+        .reduce((result, todo) => {
+            result.todos.push(todo);
+            return result;
+        }, {file: file.path, todos: []});
+    });
 };
 
 // Todo: Whats faster readFile and only lines if there is a match or read all files, by line and found the matches?

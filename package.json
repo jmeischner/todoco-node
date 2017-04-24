@@ -2,7 +2,7 @@
   "name": "todoco",
   "version": "0.0.1",
   "description": "ToDo Comment Reader in Source Files",
-  "main": "index.js",
+  "main": "todoco.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
+    "commander": "^2.9.0",
     "globby": "^6.1.0",
     "ignore": "^3.2.6",
     "lodash": "^4.17.4",
