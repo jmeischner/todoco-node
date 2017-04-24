@@ -18,6 +18,7 @@ module.exports = function(rxPaths) {
         var linenumber = 0;
         
         return Rx.Observable.fromEvent(file.datastream, 'line')
+        .takeUntil(Rx.Observable.fromEvent(file.datastream, 'close'))
         .map(line => {
             
             linenumber++;
@@ -35,7 +36,9 @@ module.exports = function(rxPaths) {
         .reduce((result, todo) => {
             result.todos.push(todo);
             return result;
-        }, {file: file.path, todos: []});
+        }, {file: file.path, todos: []})
+        .filter(file => file.todos.length > 0)
+        ;
     });
 };
 
