@@ -55,7 +55,7 @@ module.exports = {
     readConfig: readConfig
 };
 
-const convertIgnoreFilesFromConfig = function(toIgnore) { 
+const convertIgnoreFilesFromConfig = function(toIgnore) {
 
     return  _.map(toIgnore, file => {
         return file[0] === '!' ? file : '!' + file;
