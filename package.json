@@ -17,5 +17,8 @@
     "lodash": "^4.17.4",
     "rxjs": "^5.2.0",
     "toml": "^2.3.2"
+  },
+  "devDependencies": {
+    "jasmine": "^2.6.0"
   }
 }
