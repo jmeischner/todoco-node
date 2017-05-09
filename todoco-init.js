@@ -7,7 +7,7 @@ let questions = [
         name: 'project.name',
         type: 'input',
         message: 'What is the name of your project'
-    }, 
+    },
     {
         name: 'files.useGitignore',
         type: 'confirm',
@@ -52,3 +52,4 @@ let questions = [
 inquirer
     .prompt(questions)
     .then(answers => writeConfig(__dirname, answers));
+
