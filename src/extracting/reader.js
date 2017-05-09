@@ -13,6 +13,7 @@ module.exports = function(rxPaths) {
     .flatMap(path => Rx.Observable.from(path))
     .map(extractTodo)
     .flatMap(file => {
+        
         var linenumber = 0;
         
         return Rx.Observable.fromEvent(file.datastream, 'line')
@@ -35,8 +36,7 @@ module.exports = function(rxPaths) {
             result.todos.push(todo);
             return result;
         }, {file: file.path, todos: []})
-        .filter(file => file.todos.length > 0)
-        ;
+        .filter(todoFile => todoFile.todos.length > 0);
     });
 };
 
@@ -51,6 +51,7 @@ module.exports = function(rxPaths) {
 // }
 
 function extractTodo(path) {
+
     const rl = readline.createInterface({
         input: fs.createReadStream(path)
     });

@@ -71,8 +71,8 @@ describe('Tests for the config module', function() {
         it('should read out .gitignore file and use the settings in combination with the config.', (done) => {
             let testFiles = {
                 useGitignore: true,
-                ignore: ['src/**', '!.todoco'],
-                add: []
+                ignore: ['src/**', '!.todoco', '**'],
+                add: ['test/config/test-files/empty-todoco/.todoco']
             };
 
             spyOn(fs, 'existsSync').and.returnValue(true);

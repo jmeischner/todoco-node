@@ -50,11 +50,6 @@ const filesFromConfig = function(directory, files) {
     }
 };
 
-module.exports = {
-    getFiles: filesFromConfig,
-    readConfig: readConfig
-};
-
 const convertIgnoreFilesFromConfig = function(toIgnore) {
 
     return  _.map(toIgnore, file => {
@@ -75,4 +70,9 @@ const fillConfigWithDefaults = function(config) {
     config.files.ignore = config.files.ignore ? config.files.ignore : [];
 
     return config;
+};
+
+module.exports = {
+    getFiles: filesFromConfig,
+    readConfig: readConfig
 };
