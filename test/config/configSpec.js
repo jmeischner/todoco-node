@@ -57,12 +57,12 @@ describe('Tests for the config module', function() {
                 ignore: ['**'],
                 add: ['test/config/test-files/empty-todoco/.todoco']
             };
-            
+
             let result = config.getFiles('.', testFiles);
             let count = 0;
             let noop = () => {};
             result
-                .subscribe((file) => { count += file.length }, noop, () => {
+                .subscribe((file) => { count += file.length; }, noop, () => {
                 expect(count).toBe(1);
                 done();
             });
@@ -82,7 +82,7 @@ describe('Tests for the config module', function() {
             let count = 0;
             let noop = () => {};
             result
-                .subscribe((file) => { count += file.length }, noop, () => {
+                .subscribe((file) => { count += file.length; }, noop, () => {
                 expect(count).toBe(1);
                 done();
             });
@@ -103,7 +103,7 @@ describe('Tests for the config module', function() {
             let noop = () => {};
             result
                 .subscribe(
-                    () => { count += 1 }, 
+                    () => { count += 1; },
                     noop, () => {
                         expect(count).toBe(0);
                         done();
