@@ -51,5 +51,5 @@ let questions = [
 
 inquirer
     .prompt(questions)
-    .then(answers => writeConfig(__dirname, answers));
+    .then(answers => writeConfig('.', answers));
 
