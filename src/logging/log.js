@@ -13,7 +13,16 @@ const errorLog = function(code, message, details=false) {
     return null;
 };
 
+const infoLog = function(code, message) {
+    const infoCode = "[" + code + "]";
+    let info = infoCode.green + ": ".cyan + message.green;
+    console.log(info);
+
+    return null;
+};
+
 
 module.exports = {
-    error: errorLog
+    error: errorLog,
+    info: infoLog
 };

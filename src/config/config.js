@@ -8,11 +8,12 @@ const log = require('../logging/log');
 const _ = require('lodash');
 
 // Todo: Refactor File
-const readConfig = function (directory) {
+const readConfig = function (directory='.') {
     let configPath = path.join(directory, '/.todoco');
-    
+
     if (!fs.existsSync(configPath)) {
-        return log.error('C001', 'No ".todoco" file exists in project dir.', 'Path: ' + configPath);
+        // return log.error('C001', 'No ".todoco" file exists in project dir.', 'Path: ' + configPath);
+        return false;
     }
 
     const tomlFile = fs.readFileSync(configPath);
@@ -20,9 +21,10 @@ const readConfig = function (directory) {
     try {
         config = toml.parse(tomlFile);
     } catch (e) {
-        return log.error("C002", 'Error during parsing ".todoco" file', "Parsing error on line " + e.line + ", column " + e.column + ": " + e.message);
+        log.error("C001", 'Error during parsing ".todoco" file', "Parsing error on line " + e.line + ", column " + e.column + ": " + e.message);
+        return false;
     }
-    
+
     config = fillConfigWithDefaults(config);
     return config;
 };
@@ -40,7 +42,14 @@ const filesFromGitignore = function (directory, toAdd, toIgnore) {
     }
 };
 
-const filesFromConfig = function(directory, files) {
+const getFiles = function(
+    files = {
+        add: [],
+        ignore: [],
+        useGitignore: false
+    },
+    directory = '.'
+) {
     const addEntries = files.add;
     const ignoreEntries = convertIgnoreFilesFromConfig(files.ignore);
     if (files.useGitignore) {
@@ -55,7 +64,7 @@ const convertIgnoreFilesFromConfig = function(toIgnore) {
     return  _.map(toIgnore, file => {
         return file[0] === '!' ? file : '!' + file;
     });
-    
+
 };
 
 const fillConfigWithDefaults = function(config) {
@@ -73,6 +82,6 @@ const fillConfigWithDefaults = function(config) {
 };
 
 module.exports = {
-    getFiles: filesFromConfig,
+    getFiles: getFiles,
     readConfig: readConfig
 };
