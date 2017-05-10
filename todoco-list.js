@@ -10,18 +10,29 @@ program
 
 if (program.path) {
     let filesPath = path.join(program.path, '**');
-    const filesConfig = {
+    const filesInPath = {
         add: [filesPath],
         ignore: ['**'],
         useGitignore: false
     };
 
-    const files = configReader.getFiles('', filesConfig);
+    const files = configReader.getFiles('', filesInPath);
     readTodosFromFiles(files);
 
 } else {
     const config = configReader.readConfig('.');
-    const files = configReader.getFiles('.', config.files);
+    let files = [];
+    if (config) {
+        files = configReader.getFiles('.', config.files);
+    } else {
+        const filesInCurrentDir = {
+            add: [],
+            ignore: [],
+            useGitignore: false 
+        };
+        files = configReader.getFiles('.', filesInCurrentDir);
+    }
+
     readTodosFromFiles(files);
 }
 
