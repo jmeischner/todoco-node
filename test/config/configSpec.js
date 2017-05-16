@@ -18,10 +18,8 @@ describe('Tests for the config module', function() {
         });
 
         it('if there is no config in given Directory it should give an error.', () => {
-            spyOn(log, 'error');
-            config.readConfig('/');
-            let filepath = path.join('/', '/.todoco');
-            expect(log.error).toHaveBeenCalledTimes(1);
+            const result = config.readConfig('/');
+            expect(result).toBeFalsy();
         });
 
         it('should show an error if config file is not parsable', () => {
@@ -58,7 +56,8 @@ describe('Tests for the config module', function() {
                 add: ['test/config/test-files/empty-todoco/.todoco']
             };
 
-            let result = config.getFiles('.', testFiles);
+            let result = config.getFiles(testFiles);
+
             let count = 0;
             let noop = () => {};
             result
@@ -78,7 +77,7 @@ describe('Tests for the config module', function() {
             spyOn(fs, 'existsSync').and.returnValue(true);
             spyOn(fs, 'readFileSync').and.returnValue('node_modules');
 
-            let result = config.getFiles('.', testFiles);
+            let result = config.getFiles(testFiles, '.');
             let count = 0;
             let noop = () => {};
             result
@@ -92,20 +91,22 @@ describe('Tests for the config module', function() {
             let testFiles = {
                 useGitignore: true,
                 ignore: ['src/**', '!.todoco'],
-                add: []
+                add: ['test/config/test-files/simpleTodo.js']
             };
 
             spyOn(fs, 'existsSync').and.returnValue(false);
             spyOn(fs, 'readFileSync').and.returnValue('node_modules');
 
-            let result = config.getFiles('.', testFiles);
+            let result = config.getFiles(testFiles);
             let count = 0;
             let noop = () => {};
             result
                 .subscribe(
-                    () => { count += 1; },
+                    (file) => {
+                        count += 1;
+                    },
                     noop, () => {
-                        expect(count).toBe(0);
+                        expect(count).toBe(1);
                         done();
                 });
         });

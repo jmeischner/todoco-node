@@ -1,5 +1,5 @@
-const todoReader = require('./../extracting/reader');
-const configReader = require('./../config/config');
+const todoReader = require('../extracting/reader');
+const configReader = require('../config/config');
 const listTodos = require('./list-todos');
 const log = require('./log');
 
@@ -9,21 +9,22 @@ const clear = require('clear');
 const _ = require('lodash');
 
 function listTodosForGivenPath(dir) {
-    let filesPath = path.join(dir, '**');
+    const filesPath = path.join(dir, '**');
     const allFilesInPath = {
         add: [filesPath],
-        ignore: ['**'],
+        ignore: [],
         useGitignore: false
     };
 
     const files = configReader.getFiles(allFilesInPath);
-    readTodosFromFiles(files);
+    return readTodosFromFiles(files);
 }
 
 function listTodosFromConfig() {
     const config = configReader.readConfig();
+
     let files = configReader.getFiles(config.files);
-    readTodosFromFiles(files);
+    return readTodosFromFiles(files);
 }
 
 function readTodosFromFiles(files){
@@ -31,22 +32,25 @@ function readTodosFromFiles(files){
     console.log('-'.repeat(80).blue);
     let nrOfFiles = 0;
     let nrOfTodos = 0;
-    todoReader(files).subscribe(file => {
-        nrOfFiles++;
-        nrOfTodos += file.todos.length;
-        listTodos(file);
-    }, (err) => {
-        log.error('C002', 'An error occured during looking for ToDos in files', err);
-    }, () => {
-        if (nrOfFiles === 0) {
-            log.info('I001', 'No ToDos found.');
-        } else {
-            let todoString = nrOfTodos > 1 ? 'ToDos' : 'ToDo';
-            console.log('-'.repeat(80).blue);
-            console.log(_.padStart('Found ' + nrOfTodos + ' ' + todoString + ' in ' + nrOfFiles + ' files.', 77).green);
-        }
+    return new Promise ((fulfill, reject) => {
+        todoReader(files).subscribe(file => {
+            nrOfFiles++;
+            nrOfTodos += file.todos.length;
+            listTodos.toConsole(file);
+        }, (err) => {
+            log.error('C002', 'An error occured during looking for ToDos in files', err);
+            reject(err);
+        }, () => {
+            if (nrOfFiles === 0) {
+                log.info('I001', 'No ToDos found.');
+            } else {
+                let todoString = nrOfTodos === 1 ? 'ToDo' : 'ToDos';
+                console.log('-'.repeat(80).blue);
+                console.log(_.padStart('Found ' + nrOfTodos + ' ' + todoString + ' in ' + nrOfFiles + ' files.', 77).green);
+            }
+            fulfill();
+        });
     });
-
 
 }
 

@@ -31,14 +31,17 @@ const readConfig = function (directory='.') {
 
 const filesFromGitignore = function (directory, toAdd, toIgnore) {
     var gitignoreFile = path.join(directory, '/.gitignore');
+
     if (fs.existsSync(gitignoreFile)) {
         const ig = ignore().add(fs.readFileSync(gitignoreFile).toString());
-        return Rx.Observable.fromPromise(globby(_.concat(['**'], toIgnore, toAdd), {nodir: true}))
+
+        return Rx.Observable.fromPromise(globby(_.concat('**', toIgnore, toAdd), {nodir: true}))
         .map(paths => {
+            console.log(paths)
             return ig.filter(paths);
         });
     } else {
-        return Rx.Observable.from([]);
+        return Rx.Observable.fromPromise(globby(_.concat('**', toIgnore, toAdd), {nodir: true}));
     }
 };
 
@@ -52,10 +55,19 @@ const getFiles = function(
 ) {
     const addEntries = files.add;
     const ignoreEntries = convertIgnoreFilesFromConfig(files.ignore);
+
     if (files.useGitignore) {
         return filesFromGitignore(directory, addEntries, ignoreEntries);
     } else {
-        return Rx.Observable.fromPromise(globby(_.concat(['**'], ignoreEntries, addEntries), {nodir: true}));
+
+        globby(_.concat([ '**' ] ), {nodir: true, dot: true, nocase:true}).then(files => {
+            console.log(files);
+        })
+        return Rx.Observable.fromPromise(globby(_.concat(ignoreEntries, addEntries), {
+            nodir: true,
+            dot: true,
+            nocase:true
+        }));
     }
 };
 

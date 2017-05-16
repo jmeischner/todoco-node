@@ -11,15 +11,14 @@ const stringBuilder = require('./string-builder');
 module.exports = function(rxPaths) {
     return rxPaths
     .flatMap(path => Rx.Observable.from(path))
-    .map(extractTodo)
+    .map(createDataStream)
     .flatMap(file => {
-        
-        var linenumber = 0;
-        
+
+        let linenumber = 0;
+
         return Rx.Observable.fromEvent(file.datastream, 'line')
-        .takeUntil(Rx.Observable.fromEvent(file.datastream, 'close'))
         .map(line => {
-            
+
             linenumber++;
             var match = line.match(todoRegex);
             if (match) {
@@ -31,6 +30,7 @@ module.exports = function(rxPaths) {
         }, error => {
             log.error(error);
         })
+        .takeUntil(Rx.Observable.fromEvent(file.datastream, 'close'))
         .filter(todo => todo !== undefined)
         .reduce((result, todo) => {
             result.todos.push(todo);
@@ -50,7 +50,7 @@ module.exports = function(rxPaths) {
 //     };
 // }
 
-function extractTodo(path) {
+function createDataStream(path) {
 
     const rl = readline.createInterface({
         input: fs.createReadStream(path)

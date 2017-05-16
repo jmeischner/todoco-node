@@ -12,9 +12,9 @@ describe('The List Todos module', () => {
             }]
         };
 
-        list(file);
+        list.toConsole(file);
 
-        expect(console.log).toHaveBeenCalledWith(' file.js                                          (path/to)');
+        expect(console.log).toHaveBeenCalledWith(' file.js                                                               (path/to)');
         expect(console.log).toHaveBeenCalledWith('   1:  This is a simple Todo');
         expect(console.log).toHaveBeenCalledWith('');
     });
