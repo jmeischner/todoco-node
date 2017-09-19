@@ -2,11 +2,11 @@ const program = require('commander');
 const list = require('./src/logging/list-options');
 
 program
-    .option('-p, --path <path>', 'List Todos of files in given path')
+    .usage('<files>')
     .parse(process.argv);
 
-if (program.path) {
-    list.inDir(program.path);
+if (program.args.length > 0) {
+    list.inDir(program.args);
 } else {
     list.fromConfig();
 }

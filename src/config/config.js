@@ -46,7 +46,7 @@ const filesFromGitignore = function (directory, toAdd, toIgnore) {
 
 const getFiles = function(
     files = {
-        add: [],
+        add: ['**'],
         ignore: [],
         useGitignore: false
     },
@@ -59,9 +59,10 @@ const getFiles = function(
         return filesFromGitignore(directory, addEntries, ignoreEntries);
     } else {
 
-        globby(_.concat([ '**' ] ), {nodir: true, dot: true, nocase:true}).then(files => {
-            console.log(files);
-        })
+        // globby(_.concat([ '**' ] ), {nodir: true, dot: true, nocase:true}).then(files => {
+        //     console.log(files);
+        // });
+
         return Rx.Observable.fromPromise(globby(_.concat(ignoreEntries, addEntries), {
             nodir: true,
             dot: true,

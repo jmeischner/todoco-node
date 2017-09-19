@@ -8,16 +8,16 @@ const path = require('path');
 const clear = require('clear');
 const _ = require('lodash');
 
-function listTodosForGivenPath(dir) {
-    const filesPath = path.join(dir, '**');
+function listTodosForGivenPath(files) {
+
     const allFilesInPath = {
-        add: [filesPath],
+        add: files,
         ignore: [],
         useGitignore: false
     };
 
-    const files = configReader.getFiles(allFilesInPath);
-    return readTodosFromFiles(files);
+    const rxFiles = configReader.getFiles(allFilesInPath);
+    return readTodosFromFiles(rxFiles);
 }
 
 function listTodosFromConfig() {
@@ -56,5 +56,5 @@ function readTodosFromFiles(files){
 
 module.exports = {
     inDir: listTodosForGivenPath,
-    fromConfig: listTodosFromConfig
+    fromConfig: listTodosFromConfig,
 };
