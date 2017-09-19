@@ -37,7 +37,6 @@ const filesFromGitignore = function (directory, toAdd, toIgnore) {
 
         return Rx.Observable.fromPromise(globby(_.concat('**', toIgnore, toAdd), {nodir: true}))
         .map(paths => {
-            console.log(paths)
             return ig.filter(paths);
         });
     } else {
