@@ -1,0 +1,279 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"resto",
+				"restoreGlobal〔function〕"
+			],
+			[
+				"write",
+				"writeGlobalJson"
+			],
+			[
+				"pathtogl",
+				"pathToGlobalBackup〔variable〕"
+			],
+			[
+				"path",
+				"pathToGlobalBackup〔variable〕"
+			],
+			[
+				"pathT",
+				"pathtoGlobal〔variable〕"
+			],
+			[
+				"exis",
+				"fs.existsSync(path);"
+			],
+			[
+				"compi",
+				"compileGlobalTemplate〔function〕"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"last_filter": "json val",
+		"selected_items":
+		[
+			[
+				"json val",
+				"Pretty JSON: Validate"
+			],
+			[
+				"json in",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pret",
+				"Pretty JSON: Validate"
+			],
+			[
+				"set sy xq",
+				"Set Syntax: XQuery"
+			],
+			[
+				"syjso",
+				"Set Syntax: JSON"
+			],
+			[
+				"set sy bas",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"wal ",
+				"Wallaby.js: Toggle Tests View"
+			],
+			[
+				"wall",
+				"Wallaby.js: Start"
+			],
+			[
+				"was",
+				"Wallaby.js: Start"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"set sy ba",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"pack",
+				"Install Package Control"
+			],
+			[
+				"togl st",
+				"View: Toggle Status Bar"
+			]
+		],
+		"width": 558.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/janmeischner/Projects/todoco"
+	],
+	"file_history":
+	[
+		"/Users/janmeischner/Projects/adesso/influx-cli/.git/COMMIT_EDITMSG",
+		"/Users/janmeischner/Projects/adesso/influx-cli/features/influx-global/global.json",
+		"/Users/janmeischner/Projects/adesso/influx-cli/features/config/config.js",
+		"/Users/janmeischner/Projects/adesso/influx-cli/features/config/config.json",
+		"/Users/janmeischner/Projects/adesso/influx-cli/.gitignore",
+		"/Users/janmeischner/Projects/adesso/influx-cli/features/influx-global/global.template",
+		"/Users/janmeischner/Projects/adesso/influx/.git/COMMIT_EDITMSG",
+		"/Users/janmeischner/Projects/adesso/influx/base/influx-web/repo/influx/global.xqm",
+		"/Users/janmeischner/Projects/adesso/influx/base/influx-web/repo/influx/modules.xqm",
+		"/Users/janmeischner/.dotfiles/system/path.zsh",
+		"/Users/janmeischner/.dotfiles/java/path.zsh",
+		"/etc/hosts",
+		"/Users/janmeischner/.dotfiles/.git/COMMIT_EDITMSG",
+		"/Users/janmeischner/.dotfiles/zsh/zshrc.symlink",
+		"/Users/janmeischner/.oh-my-zsh/oh-my-zsh.sh",
+		"/Volumes/home/für Paula LIDL/Contents/Resources/sync/webapp/scripts/Intl.js",
+		"/Volumes/home/für Paula LIDL/Contents/Resources/sync/webapp/scripts/partials.js",
+		"/Users/janmeischner/.dotfiles/Brewfile",
+		"/Users/janmeischner/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 132.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "todoco.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 320.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
