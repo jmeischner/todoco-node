@@ -1,0 +1,1102 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ad",
+				"addEntries"
+			],
+			[
+				"igno",
+				"ignoreEntries"
+			],
+			[
+				"ins",
+				"instrument"
+			],
+			[
+				"thb",
+				"thbc\ttoHaveBeenCalled"
+			],
+			[
+				"listTo",
+				"listTodosFromConfig"
+			],
+			[
+				"listTod",
+				"listTodosForGivenPath〔function〕"
+			],
+			[
+				"in",
+				"inquirer"
+			],
+			[
+				"exp",
+				"expectedToml"
+			],
+			[
+				"spl",
+				"splittedString"
+			],
+			[
+				"split",
+				"splitStringByLength〔function〕"
+			],
+			[
+				"it",
+				"it\tit"
+			],
+			[
+				"filename",
+				"filenameWithExtension"
+			],
+			[
+				"influ",
+				"influxDir〔variable〕"
+			],
+			[
+				"string",
+				"stringBuilder〔variable〕"
+			],
+			[
+				"DAt",
+				"DataTypes"
+			],
+			[
+				"res",
+				"resources"
+			],
+			[
+				"ig",
+				"ignoreEntries"
+			],
+			[
+				"filesf",
+				"filesFromGitignore〔function〕"
+			],
+			[
+				"ign",
+				"ignoreEntries〔variable〕"
+			],
+			[
+				"config",
+				"configReader〔variable〕"
+			],
+			[
+				"er",
+				"util._errnoException(err, syscall, original);"
+			],
+			[
+				"erro",
+				"errorCode〔variable〕"
+			],
+			[
+				"Err",
+				"ErrorCode〔variable〕"
+			],
+			[
+				"conf",
+				"configPath〔variable〕"
+			],
+			[
+				"direc",
+				"directory〔argument〕"
+			],
+			[
+				"LO",
+				"logNode"
+			],
+			[
+				"type",
+				"Type"
+			],
+			[
+				"si",
+				"simple-image-viewer"
+			],
+			[
+				"file",
+				"fileIndex"
+			],
+			[
+				"fun",
+				"functx"
+			],
+			[
+				"base",
+				"base64Binary"
+			],
+			[
+				"funct",
+				"functx"
+			],
+			[
+				"drop",
+				"dropzoneOptions"
+			],
+			[
+				"div",
+				"div"
+			],
+			[
+				"stand",
+				"standaloneDoId〔variable〕"
+			],
+			[
+				"getS",
+				"getStandaloneCSSContent"
+			],
+			[
+				"dataob",
+				"dataobject-viewer"
+			],
+			[
+				"datao",
+				"dataobject-viewer"
+			],
+			[
+				"data",
+				"dataobject-viewer"
+			],
+			[
+				"rend",
+				"renderStandaloneButtons"
+			],
+			[
+				"s",
+				"standalone-doId"
+			],
+			[
+				"stan",
+				"standalone-tokenId"
+			],
+			[
+				"saveSta",
+				"saveStaticXml"
+			],
+			[
+				"token",
+				"TokenId"
+			],
+			[
+				"edi",
+				"editor〔variable〕"
+			],
+			[
+				"sub",
+				"substring-before-last"
+			],
+			[
+				"filen",
+				"filenameWithExtension"
+			],
+			[
+				"func",
+				"functx"
+			],
+			[
+				"Dat",
+				"DataobjectId"
+			],
+			[
+				"ac",
+				"activitId"
+			],
+			[
+				"acti",
+				"activityName"
+			],
+			[
+				"cur",
+				"currentEditor〔variable〕"
+			],
+			[
+				"down",
+				"downloadDocument〔function〕"
+			],
+			[
+				"save",
+				"saveDocument"
+			],
+			[
+				"serv",
+				"servletPrefixField"
+			],
+			[
+				"crea",
+				"createElement〔function〕"
+			],
+			[
+				"curren",
+				"currentToken"
+			],
+			[
+				"curr",
+				"currentToken〔variable〕"
+			],
+			[
+				"input",
+				"inputTokenField"
+			],
+			[
+				"confi",
+				"configReader〔variable〕"
+			],
+			[
+				"filt",
+				"filteredFiles"
+			],
+			[
+				"DataStor",
+				"DataStoreOutputRefs"
+			],
+			[
+				"DataStore",
+				"DataStoreInputRefs"
+			],
+			[
+				"DataObj",
+				"DataObjectOutputRefs"
+			],
+			[
+				"DataSt",
+				"DataStoreOutputRefs"
+			],
+			[
+				"DataOb",
+				"DataObjectOutputRefs"
+			],
+			[
+				"back",
+				"backgroundColor"
+			],
+			[
+				"configureAsIn",
+				"configureAsInlineFrame"
+			],
+			[
+				"configure",
+				"configureAsTitleFrame〔argument〕"
+			],
+			[
+				"configur",
+				"configureAsSheetFrame〔argument〕"
+			],
+			[
+				"create",
+				"createInlineLabel〔function〕"
+			],
+			[
+				"line",
+				"linenumber"
+			],
+			[
+				"lin",
+				"linenumber"
+			],
+			[
+				"css",
+				"cssEditors〔variable〕"
+			],
+			[
+				"xml",
+				"xmlEditor〔variable〕"
+			],
+			[
+				"xmlE",
+				"xmlEditors〔variable〕"
+			],
+			[
+				"rel",
+				"reloadView〔function〕"
+			],
+			[
+				"todo",
+				"todoStringBuilder〔variable〕"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"x",
+				"xmlView"
+			],
+			[
+				"xmlView",
+				"xmlView-wrapper"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"ext",
+				"extractTodo〔class〕"
+			],
+			[
+				"page-c",
+				"page-css"
+			],
+			[
+				"render",
+				"renderFileTabs"
+			],
+			[
+				"path",
+				"path"
+			],
+			[
+				"sav",
+				"saveFiles〔function〕"
+			],
+			[
+				"texal",
+				"text-align"
+			],
+			[
+				"getD",
+				"getDefaultCSSContent"
+			],
+			[
+				"module",
+				"module-static"
+			],
+			[
+				"upda",
+				"updateView"
+			],
+			[
+				"onkey",
+				"onkeypress〔function〕"
+			],
+			[
+				"transform",
+				"transformXMLToHTML"
+			],
+			[
+				"ex",
+				"extractTodo"
+			],
+			[
+				"app",
+				"appConfig"
+			],
+			[
+				"mod",
+				"modulePath〔variable〕"
+			],
+			[
+				"web",
+				"webappPath〔variable〕"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"sp",
+				"spawnGulp"
+			],
+			[
+				"rela",
+				"relativePath〔variable〕"
+			],
+			[
+				"requi",
+				"required〔variable〕"
+			],
+			[
+				"cal",
+				"callback"
+			],
+			[
+				"temp",
+				"templateFiles〔variable〕"
+			],
+			[
+				"getA",
+				"getAllTemplates〔function〕"
+			],
+			[
+				"com",
+				"compileTemplate〔function〕"
+			],
+			[
+				"tem",
+				"templateData〔variable〕"
+			],
+			[
+				"readF",
+				"fs.readFileSync(path, options);"
+			],
+			[
+				"re",
+				"relativePath"
+			],
+			[
+				"ap",
+				"appConfig"
+			],
+			[
+				"inf",
+				"influxDir〔variable〕"
+			],
+			[
+				"infl",
+				"influxShellScript〔variable〕"
+			],
+			[
+				"start",
+				"startInflux〔variable〕"
+			],
+			[
+				"st",
+				"startInflux"
+			],
+			[
+				"desc",
+				"description"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/config/config.js",
+			"settings":
+			{
+				"buffer_size": 2840,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 135.0,
+		"last_filter": "pack remo",
+		"selected_items":
+		[
+			[
+				"pack remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"packin",
+				"Package Control: Install Package"
+			],
+			[
+				"npm",
+				"npm: Update Local Packages"
+			],
+			[
+				"wal fai",
+				"Wallaby.js: Jump to failing test"
+			],
+			[
+				"toggle",
+				"View: Toggle Status Bar"
+			],
+			[
+				"editorcon",
+				"Set Syntax: EditorConfig"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"walla",
+				"Wallaby.js: Run project tests"
+			],
+			[
+				"gutter",
+				"SublimeLinter: Choose Gutter Theme"
+			],
+			[
+				"wal",
+				"Wallaby.js: Jump to failing test"
+			],
+			[
+				"wall",
+				"Wallaby.js: Show Uncovered Regions"
+			],
+			[
+				"wallay",
+				"Wallaby.js: Show Console"
+			],
+			[
+				"packcon l",
+				"Package Control: List Packages"
+			],
+			[
+				"wa",
+				"Wallaby.js: Stop"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"gul",
+				"Gulp"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prettify",
+				"HTMLPrettify"
+			],
+			[
+				"pret jso",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"packins",
+				"Package Control: Install Package"
+			],
+			[
+				"prettyj",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"new fil",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"tgsb",
+				"View: Toggle Status Bar"
+			],
+			[
+				"status",
+				"View: Toggle Status Bar"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"iter",
+				"Open in terminal"
+			],
+			[
+				"gu",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"gul k",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"g",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack in ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 420.0,
+		"history":
+		[
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/meischner/Projects/privat/ToDoCo/CLI",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/config"
+	],
+	"file_history":
+	[
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/todoco.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/config/config.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/.todoco",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/logging/list-optionsSpec.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/config/configSpec.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/logging/list-options.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/extracting/reader.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/wallaby.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/config/test-files/simpleTodo.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/todoco-list.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/logging/list-todos.js",
+		"/Users/meischner/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/logging/log.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/todoco-init.js",
+		"/Users/meischner/Projects/adesso/influx/.todoco",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/node_modules/colors/examples/normal-usage.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/ReadMe.md",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/config/write-config.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/config/write-configSpec.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/.editorconfig",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/package.json",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/extracting/readerSpec.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/extracting/test-files/simpleTodo.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/extracting/test-files",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/common/string-helper.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/common/string-helperSpec.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/logging/list-todosSpec.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/extracting/string-builderSpec.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/logging/logSpec.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/config/test-files/filled-todoco/.todoco",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/config/test-files/filled-todoco/.gitignore",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/config/test-files/empty-todoco/.todoco",
+		"/Users/meischner/Library/Application Support/Sublime Text 3/Packages/Wallaby/projects/c5fa435c8c7bc7bb/instrumented/screen.png",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/test/config/test-files/invalid-todoco/.todoco",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/.gitignore",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/webapp/influx_app/modules/degruyter-dashboard/module.xml",
+		"/Users/meischner/Projects/adesso/influx/.gitignore",
+		"/Users/meischner/.dotfiles/system/aliases.zsh",
+		"/Users/meischner/Projects/adesso/influx/release/cornelsen/conceptlab/build.xml",
+		"/Users/meischner/Projects/adesso/influx/apps/projects/cornelsen/pom.xml",
+		"/Users/meischner/Downloads/buinap",
+		"/Users/meischner/.dotfiles/bin/xbash",
+		"/Users/meischner/Projects/adesso/influx/apps/projects/tüv/formbuilder/pom.xml",
+		"/Users/meischner/Projects/adesso/influx/apps/projects/tüv/pom.xml",
+		"/Users/meischner/Projects/adesso/influx/apps/projects/tüv/formular-preview/pom.xml",
+		"/Users/meischner/Projects/adesso/influx/apps/projects/tüv/tuev-kundenbetreuer/pom.xml",
+		"/Users/meischner/Projects/adesso/influx/apps/projects/tüv/tuev-rheinland-corporate-design/pom.xml",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/config.json",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/templates/module-template.xml",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/TestApp/translations.xml",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/templates/pom-template.xml",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/templates/translation-template.xml",
+		"/Users/meischner/Downloads/Simple XQuery.xq",
+		"/Users/meischner/Projects/adesso/influx/base/mounted/kup_klein/iF_PRODUCTS_NEW_20170330_021320.xml",
+		"/Users/meischner/Projects/adesso/influx/base/mounted/kup_klein/iF_PRODUCTS_DEL_20170330_021320.xml",
+		"/Users/meischner/Projects/adesso/influx/apps/projects/degruyter/onixmanager/pom.xml",
+		"/Users/meischner/Projects/adesso/influx/base/mounted/localTransformations/Instant Trafo-2017-04-27T08:25:24.606Z.xml",
+		"/Users/meischner/Desktop/2017:04:26 Backup DeGruyter/kup-import-manager/kup-import-manager-requests.xqm",
+		"/Users/meischner/Desktop/2017:04:26 Backup DeGruyter/kup-export-manager/kup-export-manager.xqm",
+		"/Users/meischner/Downloads/Select Products by ID.xq",
+		"/Users/meischner/Projects/adesso/influx/maven/influx-app-assembly-descriptor/src/main/resources/assemblies/assembly.xml",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/webapp/influx_app/modules/kup-export-manager/resources/receiver-management-api-resource.xqm",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/webapp/influx_app/modules/kup-export-manager/static/example-xslt/test-transformation kaputt.xsl",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/webapp/influx_app/modules/kup-export-manager/resources/export-job-management-api-resource.xqm",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/extracting/string-builder.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/src/extracting/regex.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/todo-string-builder.js",
+		"/Users/meischner/Projects/privat/ToDoCo/CLI/.git/COMMIT_EDITMSG",
+		"/Users/meischner/Projects/adesso/influx/docker/docker-compose-development.yml",
+		"/Users/meischner/Projects/adesso/influx/apps/projects/degruyter/onixmanager/kup-export-manager/static/example-xslt/test-transformation.xsl",
+		"/Users/meischner/Projects/privat/ToDoCo/REST/server/models/todo.json",
+		"/Users/meischner/Projects/privat/ToDoCo/REST/server/models/project.json",
+		"/Users/meischner/Projects/privat/ToDoCo/REST/server/boot/create-sample-projects.js",
+		"/Users/meischner/Projects/privat/ToDoCo/REST/server/boot/create-sample-todos.js",
+		"/Users/meischner/Projects/privat/ToDoCo/REST/server/models/todo.js",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/webapp/influx_app/modules/kup-export-manager/static/example-xslt/test-output.xml",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/webapp/influx_app/modules/kup-export-manager/static/example-xslt/test-output.xsl",
+		"/Users/meischner/Downloads/test-transformation.xsl.xml",
+		"/Users/meischner/Projects/privat/ToDoCo/Server/database/seeders/20170413203225-init.js",
+		"/Users/meischner/Projects/privat/ToDoCo/Server/database/models/todo.js",
+		"/Users/meischner/Projects/privat/ToDoCo/Server/database/models/project.js",
+		"/Users/meischner/Projects/privat/ToDoCo/Server/database/migrations/20170413204422-create-project.js",
+		"/Users/meischner/Projects/privat/ToDoCo/Server/database/migrations/20170413202206-init.js",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/app-create.js",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/templates/app-ui-template.xqm",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/index.js",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/templates/app-module-template.xqm",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/templates/app-api-template.xqm",
+		"/Users/meischner/Projects/adesso/tools/influx-cli/templates/app-resource-template.xqm",
+		"/Users/meischner/Projects/adesso/influx/docker/influx-basexserver/Dockerfile",
+		"/Users/meischner/Projects/adesso/influx/base/mounted/kup/iF_PRODUCTS_UPD_20170330_021320.xml",
+		"/Users/meischner/Projects/adesso/influx/docker/docker-compose-robot.yml",
+		"/Users/meischner/Projects/adesso/influx/docker/docker-compose-cloud9.yml",
+		"/Users/meischner/Projects/adesso/influx/docker/docker-compose-cloud9-robot.yml",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/repo/influx/modules.xqm",
+		"/Users/meischner/Projects/privat/ToDoCo/src/todo-regex.js",
+		"/Users/meischner/Projects/privat/ToDoCo/src/todo-reader.js",
+		"/Users/meischner/Projects/privat/ToDoCo/index.js",
+		"/Users/meischner/Projects/privat/ToDoCo/.todoco",
+		"/Users/meischner/Projects/privat/ToDoCo/src/todo-log.js",
+		"/Users/meischner/Projects/privat/ToDoCo/src/todo-config.js",
+		"/Users/meischner/Projects/privat/ToDoCo/package.json",
+		"/Users/meischner/Library/Application Support/Sublime Text 3/Packages/Terminal/Default (OSX).sublime-keymap",
+		"/Users/meischner/Library/Application Support/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/Users/meischner/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/private/etc/hosts",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/webapp/influx_app/modules/readme.md",
+		"/Users/meischner/Projects/adesso/influx/docker/influx-basexhttp/Dockerfile",
+		"/Users/meischner/Projects/adesso/influx/docker/influx-keycloak/influx-realm.json",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/webapp/WEB-INF/jetty-web.xml",
+		"/Users/meischner/Projects/adesso/influx/base/influx-web/WEB-INF/web.xml",
+		"/Users/meischner/Projects/adesso/influx/base/mounted/kup/iF_PRODUCTS_DEL_20170330_021320.xml",
+		"/Users/meischner/Projects/adesso/influx/base/mounted/kup/iF_PRODUCTS_NEW_20170330_021320.xml",
+		"/Users/meischner/Projects/adesso/influx/base/mounted/.gitignore",
+		"/Users/meischner/Projects/adesso/influx/apps/projects/degruyter/onixmanager/degruyter-kup-logger/pom.xml",
+		"/Users/meischner/.ssh/config",
+		"/Users/meischner/Projects/adesso/influx/README.md",
+		"/Users/meischner/Desktop/createProductsDB.xq",
+		"/Users/meischner/Documents/testDB/new.xml",
+		"/Users/meischner/Projects/adesso/influx/data/bpmn-repository/raw/5f5b150c-bf09-476c-b951-d4a4614b130a/DataObjectReference_0jqq8hp/content.xml",
+		"/Users/meischner/Projects/adesso/influx/apps/influx/simple-image-viewer/pom.xml",
+		"/Users/meischner/Projects/adesso/influx-apps/MockApp/gulpfile.js",
+		"/Users/meischner/Projects/adesso/influx-apps/MockApp/module.xml",
+		"/Users/meischner/Projects/adesso/influx-apps/MockApp/package.json",
+		"/Users/meischner/Projects/adesso/influx-apps/MockApp/pom.xml",
+		"/Users/meischner/Projects/adesso/influx-apps/MockApp/simple-image-viewer-import.xqm",
+		"/Users/meischner/Projects/adesso/influx-apps/MockApp/simple-image-viewer-providers.xqm",
+		"/Users/meischner/Projects/adesso/influx-apps/MockApp/simple-image-viewer-requests.xqm"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/meischner/Projects/privat/ToDoCo/CLI,-/Users/meischner/Projects/privat/ToDoCo/CLI/node_modules/**",
+			"/Users/meischner/Projects/privat/ToDoCo/CLI,-/Users/meischner/Projects/privat/ToDoCo/CLI/node_modules/",
+			"/Users/meischner/Projects/privat/ToDoCo/CLI,-/Users/meischner/Projects/privat/ToDoCo/CLI/node_modules",
+			"/Users/meischner/Projects/privat/ToDoCo/CLI,-./node_modules",
+			"/Users/meischner/Projects/privat/ToDoCo/CLI,-node_modules",
+			"/Users/meischner/Projects/privat/ToDoCo/CLI",
+			"/Users/meischner/Projects/adesso/tools/influx-cli,-node_modules",
+			"/Users/meischner/Projects/adesso/fontoxml-app-example/platform",
+			"/Users/meischner/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/C9C8F9F7-8A45-438D-8FBC-51EB7E2343B7/fontoxml-app-6.9.1-1489396571,-node_modules/",
+			"/Users/meischner/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/C9C8F9F7-8A45-438D-8FBC-51EB7E2343B7/fontoxml-app-6.9.1-1489396571,-node_modules/**/*",
+			"/Users/meischner/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/C9C8F9F7-8A45-438D-8FBC-51EB7E2343B7/fontoxml-app-6.9.1-1489396571,-node_modules/*",
+			"/Users/meischner/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/C9C8F9F7-8A45-438D-8FBC-51EB7E2343B7/fontoxml-app-6.9.1-1489396571,-node_modules",
+			"/Users/meischner/Library/Containers/com.apple.mail/Data/Library/Mail Downloads/C9C8F9F7-8A45-438D-8FBC-51EB7E2343B7/fontoxml-app-6.9.1-1489396571",
+			"<current file>",
+			"-node_modules/",
+			"-node_modules",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"__dirname",
+			"uv_chdir",
+			"bla",
+			"<serial ",
+			"edition_id",
+			"db-",
+			"_:module",
+			"$_:module",
+			"mock",
+			"simpleImageViewer",
+			"mock",
+			"mockap",
+			"mockapp",
+			"trace",
+			"activityName",
+			"initializeEditor",
+			"splitFirstOccurrences",
+			"writeLocalFiles",
+			"query",
+			"query-param",
+			"render-input-ids",
+			"table",
+			"indexentry",
+			"[a-z][A-Z]*\\s<indexentry key=\"",
+			"[a-z]/g",
+			"indexentry",
+			"textmodule",
+			"configureAsBlock",
+			"xml",
+			"node-attributes",
+			"example.xml",
+			"attributes-editor-configuration",
+			"hierarchy-node-query",
+			"<!--",
+			"all",
+			"location",
+			"doId",
+			"tabs-con",
+			"mdk-editor",
+			"spawn"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"DoId",
+			"dataobject-viewer"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/config/config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"at_wb_tests_view": false,
+							"auto_complete": false,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 361.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.gulp_output":
+	{
+		"height": 182.0
+	},
+	"output.nodejs":
+	{
+		"height": 152.0
+	},
+	"output.textarea":
+	{
+		"height": 110.0
+	},
+	"output.wallabyjs":
+	{
+		"height": 341.0
+	},
+	"output.wallabyjs_console":
+	{
+		"height": 396.0
+	},
+	"pinned_build_system": "Packages/User/node.sublime-build",
+	"project": "todoco-cli.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"log",
+				"src/logging/log.js"
+			],
+			[
+				"confi",
+				"src/config/config.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "inf",
+		"selected_items":
+		[
+			[
+				"inf",
+				"~/Projects/adesso/influx/influx.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 322.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
