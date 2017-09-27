@@ -4,7 +4,7 @@ const globby = require('globby');
 const path = require('path');
 const Rx = require('rxjs/Rx');
 const toml = require('toml');
-const log = require('../logging/log');
+const log = require('../output/log');
 const _ = require('lodash');
 
 // Todo: Refactor File

@@ -1,5 +1,5 @@
 const config = require('../../src/config/config');
-const log = require('../../src/logging/log');
+const log = require('../../src/output/log');
 const path = require('path');
 const fs = require('fs');
 

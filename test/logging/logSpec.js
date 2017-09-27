@@ -1,4 +1,4 @@
-const log = require('../../src/logging/log');
+const log = require('../../src/output/log');
 
 describe('The Logging Module', () => {
     it('should log an error message without details', () => {

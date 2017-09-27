@@ -8,7 +8,8 @@ useGitignore = true
 ignore = [
     'node_modules/**/*',
     'src/extracting/regex.js',
-    'test/**/test-files/**'
+    'test/**/test-files/**',
+    '*.sublime-*'
 ]
 
 add = [

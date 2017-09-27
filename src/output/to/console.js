@@ -1,42 +1,31 @@
-const todoReader = require('../extracting/reader');
-const configReader = require('../config/config');
-const listTodos = require('./list-todos');
-const log = require('./log');
-
 const colors = require('colors');
+const _ = require('lodash');
 const path = require('path');
 const clear = require('clear');
-const _ = require('lodash');
 
-function listTodosForGivenPath(files) {
+const todoReader = require('../../extracting/reader');
+const stringHelper = require('../../common/string-helper');
 
-    const allFilesInPath = {
-        add: files,
-        ignore: [],
-        useGitignore: false
-    };
-
-    const rxFiles = configReader.getFiles(allFilesInPath);
-    return readTodosFromFiles(rxFiles);
+function fileToConsole(file) {
+    let filename = path.basename(file.file);
+    let filepath = path.dirname(file.file);
+    console.log(_.padEnd(" " + filename.yellow.underline, 50) + _.padStart('(' + filepath + ')', 30).yellow.dim.italic);
+    _.forEach(file.todos, todo => {
+        console.log(_.padStart(todo.line, 4).green + _.padEnd(":", 3) + stringHelper.buildMultilineTodoText(todo.text, 73, 7));
+    });
+    console.log("");
 }
 
-function listTodosFromConfig() {
-    const config = configReader.readConfig();
-
-    let files = configReader.getFiles(config.files);
-    return readTodosFromFiles(files);
-}
-
-function readTodosFromFiles(files){
+function toConsole(files){
     clear();
     console.log('-'.repeat(80).blue);
     let nrOfFiles = 0;
     let nrOfTodos = 0;
     return new Promise ((fulfill, reject) => {
-        todoReader(files).subscribe(file => {
+        todoReader.stream(files).subscribe(file => {
             nrOfFiles++;
             nrOfTodos += file.todos.length;
-            listTodos.toConsole(file);
+            fileToConsole(file);
         }, (err) => {
             log.error('C002', 'An error occured during looking for ToDos in files', err);
             reject(err);
@@ -54,7 +43,4 @@ function readTodosFromFiles(files){
 
 }
 
-module.exports = {
-    inDir: listTodosForGivenPath,
-    fromConfig: listTodosFromConfig,
-};
+module.exports = toConsole;

@@ -1,4 +1,4 @@
-const list = require('../../src/logging/list-todos');
+const list = require('../../src/output/toConsole');
 
 describe('The List Todos module', () => {
     it('should print a short and simple Todo output for one file', () => {

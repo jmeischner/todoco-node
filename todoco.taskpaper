@@ -1,0 +1,26 @@
+ReadMe.md:
+	.
+	- Write ReadMe @Line(1)
+config.js:
+	src/config
+	- Refactor File @Line(10)
+reader.js:
+	src/extracting
+	- Whats faster readFile and only lines if there is a match or read all files, by line and found the matches? @Line(51)
+string-builder.js:
+	src/extracting
+	- Regex stops at colon @Line(1)
+	- Add ignore comment to declare following line as no ToDo @Line(6)
+	- extractTodo @Line(8)
+taskpaper.js:
+	src/output/to
+	- bestehende Taskpaper file soll mit neuen Ergebnissen gemerged werden @Line(22)
+	- Überlegen ob der Pfad als Kommentar gespeichert werden soll @Line(30)
+	- mit mächtigen Filtermöglichkeiten von taskpaper auseinandersetzen @Line(31)
+string-builderSpec.js:
+	test/extracting
+	- This is a Todo"; @Line(5)
+list-optionsSpec.js:
+	test/logging
+	- Bessere Erwartungen formulieren @Line(8)
+	- Bessere Erwartungen formulieren @Line(18)

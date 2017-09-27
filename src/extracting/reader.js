@@ -3,12 +3,12 @@ const Rx = require('rxjs/Rx');
 const glob = require('globby');
 const readline = require('readline');
 
-const log = require('../logging/log');
+const log = require('../output/log');
 
 const todoRegex = require('./regex')();
 const stringBuilder = require('./string-builder');
 
-module.exports = function(rxPaths) {
+const readTodosFromFiles = function(rxPaths) {
     return rxPaths
     .flatMap(path => Rx.Observable.from(path))
     .map(createDataStream)
@@ -40,6 +40,14 @@ module.exports = function(rxPaths) {
     });
 };
 
+const readTodosToSingleJson = function(files) {
+    return readTodosFromFiles(files)
+        .reduce((acc, current, index, source) => {
+            acc.push(current);
+            return acc;
+        }, []);
+};
+
 // Todo: Whats faster readFile and only lines if there is a match or read all files, by line and found the matches?
 
 // function extractTodo(path) {
@@ -61,3 +69,8 @@ function createDataStream(path) {
         datastream: rl
     };
 }
+
+module.exports = {
+    stream: readTodosFromFiles,
+    json: readTodosToSingleJson
+};

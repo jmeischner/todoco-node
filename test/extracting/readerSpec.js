@@ -8,7 +8,7 @@ describe('Todo Reader Module', () => {
         let noop = () => {};
         let files = [];
 
-        reader(paths).subscribe(
+        reader.stream(paths).subscribe(
             (file) => {
                 files.push(file);
             },
