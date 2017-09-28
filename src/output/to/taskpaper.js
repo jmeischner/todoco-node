@@ -37,7 +37,7 @@ function toTaskpaper(files) {
                 _.forEach(todo.todos, td => {
 
                     let task = new Task(td.text);
-                    let line = new Tag('Line', td.line);
+                    let line = new Tag('line', td.line);
 
                     task.addTag(line);
                     project.addChild(task);
