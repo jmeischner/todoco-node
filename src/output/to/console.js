@@ -2,6 +2,7 @@ const colors = require('colors');
 const _ = require('lodash');
 const path = require('path');
 const clear = require('clear');
+const log = require('../log');
 
 const todoReader = require('../../extracting/reader');
 const stringHelper = require('../../common/string-helper');
