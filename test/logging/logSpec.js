@@ -12,4 +12,10 @@ describe('The Logging Module', () => {
         log.error('Code', 'An Error', 'With Details');
         expect(console.log).toHaveBeenCalledWith('[Code]: An Error\nDetails: With Details');
     });
+
+    it('should show an info log', () => {
+        spyOn(console, 'log');
+        log.info("Code", "An Info Message");
+        expect(console.log).toHaveBeenCalledWith('[Code]: An Info Message')
+    });
 });
