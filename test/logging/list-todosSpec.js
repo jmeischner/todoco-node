@@ -1,4 +1,4 @@
-const list = require('../../src/output/toConsole');
+const list = require('../../src/output/to/console');
 
 describe('The List Todos module', () => {
     it('should print a short and simple Todo output for one file', () => {
@@ -12,7 +12,7 @@ describe('The List Todos module', () => {
             }]
         };
 
-        list.toConsole(file);
+        list(file);
 
         expect(console.log).toHaveBeenCalledWith(' file.js                                                               (path/to)');
         expect(console.log).toHaveBeenCalledWith('   1:  This is a simple Todo');

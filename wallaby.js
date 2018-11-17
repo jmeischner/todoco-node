@@ -17,6 +17,6 @@ module.exports = function (wallaby) {
         runner: 'node'
     },
 
-    testFramework: 'jasmine'
+    testFramework: "jasmine"
   };
 };
