@@ -44,6 +44,7 @@ const filesFromGitignore = function (directory, toAdd, toIgnore) {
     }
 };
 
+// Todo: Use #!use .gitignore Option in a file called .todocoignore instead of option .todoco file
 const getFiles = function(
     files = {
         add: ['**'],
