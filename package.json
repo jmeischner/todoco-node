@@ -18,7 +18,7 @@
     "globby": "^6.1.0",
     "ignore": "^3.3.10",
     "inquirer": "^3.3.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "rxjs": "^5.5.12",
     "taskpaper-parser": "0.0.2",
     "toml": "^2.3.2",
