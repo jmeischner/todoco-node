@@ -17,7 +17,7 @@
     "fs-extra": "^4.0.3",
     "globby": "^6.1.0",
     "ignore": "^3.3.10",
-    "inquirer": "^3.3.0",
+    "inquirer": "^13.0.2",
     "lodash": "^4.17.21",
     "rxjs": "^5.5.12",
     "taskpaper-parser": "0.0.2",
